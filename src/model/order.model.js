@@ -9,19 +9,27 @@ const orderSchema = new Schema(
       ref: "User"
     },
 
-    product_id: {
+    cart: {
           type: mongoose.Schema.Types.ObjectId,
-          ref: "Product"
-    },
-    
-    quantity: {
-     type: Number,
-     required: true
+          ref: "Cart"
     },
 
-  },
+    total_price: {
+        type: Number,
+        required: true
+    },
 
-  { timestamps: true }
+    delivery_address:{
+        type: String,
+        required: true
+    },
+
+    createdAt:{
+        type: Date,
+        required: true
+    }
+},
+
 );
 
 const orderModel = mongoose.model("Order", orderSchema);
