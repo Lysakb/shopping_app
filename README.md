@@ -82,3 +82,5 @@ Based on the requirements analysis, the following schema can be designed:
 -   POST /order/:{itemId} - Place an order for the items selected by the customer.
 -   GET /orders/:{orderId} - Get the details of a specific order.
 
+## Database
+Mongodb
